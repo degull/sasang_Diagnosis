@@ -2,16 +2,17 @@
 
 COVID-19 Interpretable Diagnosis Algorithm Based on a Small Number of Chest X-Ray Samples 논문 기반 데이터 증강기법 사용
 
-ABSTRACT
+
+## ABSTRACT
 
 
-<문제>
+### <문제>
 
 COVID-19에 기반한 개인 흉부 X-선(CXR)을 사용한 의료 진단 방법은 초기 연구에서 어려움을 겪었음
 → COVID-19 감염자의 CXR 데이터를 식별하는 데 어려움
 → 연구 초기에는 감염자의 CXR 데이터가 부족
 
-<해결>
+### <해결>
 
 인공 지능(AI)과 의료 진단의 결합
 → AI 모델의 해석 가능성 분석을 사용하여 COVID-19에 감염된 CXR 샘플의 병변 특성을 탐색하고 의료 진단을 지원
@@ -21,19 +22,20 @@ COVID-19에 기반한 개인 흉부 X-선(CXR)을 사용한 의료 진단 방법
 → 소수 샘플로 모델 훈련을 완료하기 위해 독특한 출력 레이어를 설계
 
 
-<결과>
+### <결과>
 
 세 가지 다른 출력 레이어에서 네 가지 사전 훈련된 모델의 출력 결과를 비교
 데이터 증가 후의 결과를 원래 데이터셋의 결과와 비교
 24개 그룹의 독립적인 테스트를 수행하기 위해 제어 변수 방법 사용
 → 99.23%의 정확도와 98%의 리콜률이 얻어지고 CXR 해석 가능성 분석의 시각적 결과가 표시
 
-<정리>
+### <정리>
 
 COVID-19 진단 알고리즘 네트워크는 높은 일반화 및 가벼운 특성을 가짐.
 → 빠른 속도로 다른 작업에 적용 가능
 → 실험 데이터가 부족한 경우에도 유용
 해석 가능성 분석은 의료 진단에 새로운 가능성을 제공
+
 
 ## RELEVANT WORK
 1.1 COVID-19와 VGGNet
@@ -53,7 +55,18 @@ https://velog.io/@skysh0929/COVID-19-Interpretable-Diagnosis-Algorithm-Based-on-
 
 ## CNN
 ![cnn](https://github.com/degull/sasang_Diagnosis/assets/99521386/77cb3c95-afc3-47d6-bbee-5bd55349a5bd)
+
 ** 이미지 분류를 위한 Convolutional Neural Network(CNN) 
+
 * 총 247개의 이미지가 5개의 클래스로 분류되기 위해 사용
 * 전체 모델은 약 11백만 개의 파라미터를 가지며, 이는 약 42.61MB의 메모리를 차지
 * 이미지를 입력으로 받아, 5개의 다른 클래스 중 하나로 분류하는 작업을 수행
+
+
+## VGG16
+![vgg](https://github.com/degull/sasang_Diagnosis/assets/99521386/fd389b52-1085-45ca-9399-ecad7325b9ca)
+
+** VGG16은 이미지 분류를 위해 널리 사용되는 사전 훈련된 컨볼루션 신경망
+
+* 총 992개의 이미지를 5개의 클래스로 분류하기 위해 사용되며, 또한 247개의 이미지를 동일한 클래스 수로 분류
+* 훈련 세트와 검증 세트 또는 테스트 세트를 의미
