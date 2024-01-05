@@ -3,6 +3,8 @@
 COVID-19 Interpretable Diagnosis Algorithm Based on a Small Number of Chest X-Ray Samples 논문 기반 데이터 증강기법 사용
 
 ABSTRACT
+
+
 <문제>
 
 COVID-19에 기반한 개인 흉부 X-선(CXR)을 사용한 의료 진단 방법은 초기 연구에서 어려움을 겪었음
@@ -17,6 +19,8 @@ COVID-19에 기반한 개인 흉부 X-선(CXR)을 사용한 의료 진단 방법
 전이학습
 → 다양한 사전 훈련된 모델을 테스트
 → 소수 샘플로 모델 훈련을 완료하기 위해 독특한 출력 레이어를 설계
+
+
 <결과>
 
 세 가지 다른 출력 레이어에서 네 가지 사전 훈련된 모델의 출력 결과를 비교
