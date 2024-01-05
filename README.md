@@ -49,3 +49,11 @@ COVID-19 진단 알고리즘 네트워크는 높은 일반화 및 가벼운 특�
 
 
 https://velog.io/@skysh0929/COVID-19-Interpretable-Diagnosis-Algorithm-Based-on-a-SmallNumber-of-Chest-X-Ray-Samples
+
+
+## CNN
+![cnn](https://github.com/degull/sasang_Diagnosis/assets/99521386/77cb3c95-afc3-47d6-bbee-5bd55349a5bd)
+** 이미지 분류를 위한 Convolutional Neural Network(CNN) 
+* 총 247개의 이미지가 5개의 클래스로 분류되기 위해 사용
+* 전체 모델은 약 11백만 개의 파라미터를 가지며, 이는 약 42.61MB의 메모리를 차지
+* 이미지를 입력으로 받아, 5개의 다른 클래스 중 하나로 분류하는 작업을 수행
